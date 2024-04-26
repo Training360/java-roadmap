@@ -2,8 +2,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training360 - Java Roadmap</title>
+    <title>Training360 Java képzések</title>
+    <meta name="Author" lang="hu" content="Training360"/>
+    <meta name="description" lang="hu" content="Training360 Java képzések">
+
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:url" content="https://training360.github.io/java-roadmap/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Training360 Java képzések" />
+    <meta property="og:description" content="Training360 Java képzések interaktív térképe" />
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -12,9 +23,48 @@
 
 <body>
     <div class="container">
+        <div class="header">
+            <div id="roadmap">Java Roadmap</div>
+            <div id="logo"><img src="images/training360-logo.svg" width="200px"/></div>
+        </div>
         <div class="search">
             <div class="search-container">
                 <input id="search-input" placeholder="Keresés..." />
+            </div>
+        </div>
+        <div class="filters">
+            <div id="filter-none" class="filter selected">
+                Nincs szűrés
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <div id="filter-new" class="filter">Új
+                <span class="material-symbols-outlined">
+                    new_releases
+                </span>
+            </div>
+            <div id="filter-blended" class="filter">Mentorált
+                <span class="material-symbols-outlined">
+                    desktop_windows
+                </span>
+            </div>
+            <div id="filter-classic" class="filter">Hagyományos
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div id="filter-web" class="filter">Kezdő webfejlesztő útvonal
+
+            </div>
+            <div id="filter-advanced-web" class="filter">Haladó webfejlesztő útvonal
+
+            </div>
+            <div id="filter-microservice" class="filter">Spring microservice útvonal
+
+            </div>
+            <div id="filter-test" class="filter">Java tesztautomatizálás útvonal
+
             </div>
         </div>
         <div class="category">
@@ -51,6 +101,7 @@
                                 Programozási alapok Java nyelven (3 nap)</h1>
                             <p>Bevezetés a programozásba és az objektumorientált gondolkodásba Java
                                 nyelven</p>
+                            <p><a href="https://www.training360.com/kepzes/java-bgn">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a programozás alapjainak elsajátítása, alap
                                 algoritmusok megismerése és az ismeretek alkalmazása Java nyelven.</p>
@@ -83,7 +134,7 @@
                                     létrehozása, használata</li>
                                 <li>Bevezetés a kivétel- és fájlkezelésbe</li>
                                 <li>Algoritmusok fogalma, gyakori algoritmusok</li>
-                            </ul>
+                            </ul>                            
                         </div>
                     </div>
                 </div>
@@ -118,6 +169,8 @@
                                 nap)</h1>
                             <p>Java nyelv alapjai programozóknak, objektumorientált eszközök, unit
                                 tesztelés</p>
+                            <p><a href="https://www.training360.com/kepzes/java-bsc">A képzés oldala</a></p>
+                            <p><a href="https://www.training360.com/java-se-alapok-tanfolyam-java-bsc">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a Java nyelven történő programozás alapjainak
                                 elsajátítása, a Java API alapszintű megismerése.</p>
@@ -214,6 +267,7 @@
                                 nap)</h1>
                             <p>Java API elemei, kollekciók, streamek, fájlkezelés, unit
                                 tesztelés</p>
+                            <p><a href="https://www.training360.com/kepzes/java-adv">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a Java nyelven történő programozás haladó szintjének
                                 elsajátítása, a Java API részleteinek megismerése.</p>
@@ -290,6 +344,7 @@
                                 - Java 8 plusz újdonságok, funkcionális programozás (2 nap)</h1>
                             <p>Funkcionális programozás, lambda kifejezések, streamek és az összes
                                 újdonság, mely a Java 8-ban jelent meg</p>
+                            <p><a href="https://www.training360.com/kepzes/java-se8">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A Java történetében az egyik legtöbb újdonságot a Java 8-as verziója
                                 hozta, ugyanis ebben jelentek meg a funkcionális programozási eszközök.
@@ -373,6 +428,7 @@
                                 11 újdonságok (1 nap)</h1>
                             <p>Új nyelvi lehetőségek, Java Platform Module System, Flow API és
                                 további újdonságok</p>
+                            <p><a href="https://www.training360.com/kepzes/java-se11">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A Java egyik hosszan támogatott verziója (Long-term Support - LTS) a
                                 Java 11, így már az is bátran használható. A Java 8 és 11 között sok
@@ -445,6 +501,7 @@
                                 17 újdonságok (1 nap)</h1>
                             <p>Új nyelvi lehetőségek, Java Platform Module System, Flow API és
                                 további újdonságok</p>
+                                <p><a href="https://www.training360.com/kepzes/java-se17">A képzés oldala</a></p>
                             <h2 id="képzés-leírása">Képzés leírása</h2>
                             <p>A Java egyik hosszan támogatott verziója (Long-term Support - LTS) a
                                 Java 17, így már az is bátran használható. A Java 12 és 17 között ugyan
@@ -526,6 +583,7 @@
                             <h1 id="java-adatszerkezetek-és-algoritmusok">Java adatszerkezetek és
                                 algoritmusok</h1>
                             <p>Gyakoribb algoritmusok, és hatékonyságuk elemzése</p>
+                            <p><a href="https://www.training360.com/kepzes/java-alg">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A programozás során folyamatosan találkozunk algoritmusokkal, sőt
                                 magunk is sokat valósítunk meg, de ezek vajon elég hatékonyak?</p>
@@ -604,6 +662,7 @@
                             <h1 id="párhuzamos-programozás-javaban-java-conc-2-nap">Párhuzamos
                                 programozás Javaban (JAVA-CONC) (2 nap)</h1>
                             <p>Párhuzamos programozás elméletes és régi/új eszközei Javaban</p>
+                            <p><a href="https://www.training360.com/kepzes/java-conc">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>Amennyiben a párhuzamos programozásra gondolunk, sokszor a
                                 <code>Thread</code> és a <code>Runnable</code> jut eszünkbe. Ezek a Java
@@ -684,8 +743,9 @@
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <h1 id="objektumorientált-tervezés-java-programozóknak-java-oo-2-nap">Objektumorientált
-                                tervezés Java programozóknak (JAVA-OO) (2 nap)</h1>
+                                tervezés Java programozóknak (JAVA-OO) (2 nap)</h1>                                
                             <p>Az objektumorientált elvek gyakorlati alkalmazása</p>
+                            <p><a href="https://www.training360.com/kepzes/java-oo">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>Bár programozás közben gyakran használunk objektumorientált
                                 eszközöket, nem biztos, hogy objektumorientált módon programozunk,
@@ -771,6 +831,7 @@
                                 Java nyelven (2 nap)</h1>
                             <p>Clean Code elvek alkalmazása gyakorlati példákkal és
                                 ellenpéldákkal</p>
+                                <p><a href="https://www.training360.com/kepzes/java-cc">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja hogy a résztvevő Java fejlesztők ne csak működő, de
                                 könnyen karbantartható kódot írjanak. Ennek alapvető feltétele, hogy
@@ -839,6 +900,7 @@
                                 nyelven (JAVA-DP)</h1>
                             <p>Tervezési minták gyakorlatorientáltan, példák a Java API-ban és a
                                 különböző Javas keretrendszerekben</p>
+                                <p><a href="https://www.training360.com/kepzes/java-dp">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja gyakorlati példákon keresztül megismertetni a
                                 fejlesztőket a legelterjedtebb tervezési mintákkal, melyek a gyakori
@@ -883,7 +945,7 @@
                 </div>
                 <div class="training">
                     <h1><a href="#">Domain Driven Design és implementációja Java nyelven</a></h1>
-                    <h2>JAVA-DP</h2>
+                    <h2>JAVA-DDD</h2>
 
                     <div class="footer">
                         <div class="triangle-left"></div>
@@ -917,6 +979,7 @@
                                 Driven Design és implementációja Java nyelven (JAVAX-DDD) (2 nap)</h1>
                             <p>Komplex alkalmazások részekre bontása és megvalósítása bevált minták
                                 alapján</p>
+                            <p><a href="https://www.training360.com/kepzes/java-ddd">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>Egy jó alkalmazás alapja a jó terv. Egy komplex üzleti probléma
                                 feltárása, a megoldás megtervezése, és annak kódba ültetése nem egyszerű
@@ -1001,6 +1064,7 @@
                                 (JAVAX.AG) (3 nap)</h1>
                             <p>Projektmunkán keresztüli gyakorlati képzés bármilyen agilis szerepkör
                                 számára</p>
+                                <p><a href="https://www.training360.com/kepzes/java-ag">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A fejlesztők, ha elhagyják a csapatot / szervezetet, magukkal viszik
                                 a <strong>domain tudást</strong> is (üzleti fogalmak, ezek összefüggései
@@ -1105,6 +1169,7 @@
                             <h1 id="munka-a-legacy-kóddal-java-legacy-2-nap">Munka a legacy kóddal
                                 (JAVA-LEGACY) (2 nap)</h1>
                             <p>Konkrét technikák a függőségek megszüntetésére</p>
+                            <p><a href="https://www.training360.com/kepzes/java-legacy">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>Szoftverfejleszés során gyakran legacy kóddal kell foglalkoznunk. De
                                 mit is jelent maga a fogalom? A sok definíció között találhatunk egy
@@ -1174,6 +1239,7 @@
                             <h1 id="szt-01---unit-és-integrációs-tesztelés-java-platformon-3-nap">SZT-01
                                 - Unit és integrációs tesztelés Java platformon (3 nap)</h1>
                             <p>Unit tesztelés JUnit 5, Hamcrest, AssertJ, Mockito használatával</p>
+                            <p><a href="https://www.training360.com/kepzes/szt-01">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja bemutatni a unit teszteléssel kapcsolatos
                                 alapfogalmakat, módszereket, valamint a legelterjedtebb Java alapú
@@ -1243,6 +1309,7 @@
                             <span class="close">&times;</span>
                             <h1 id="tesztautomatizálás-selenium-webdriverrel-3-nap">Tesztautomatizálás
                                 Selenium WebDriverrel (3 nap)</h1>
+                            <p><a href="https://www.training360.com/kepzes/swd-java">A képzés oldala</a></p>
                             <h2 id="képzés-leírása">Képzés leírása</h2>
                             <p>A tanfolyam részletesen ismerteti a Selenium WebDrivert használatát
                                 az adott programozási nyelven. Bemutatja, hogyan lehet weboldalakat
@@ -1369,6 +1436,7 @@
                             <span class="close">&times;</span>
                             <h1 id="javax-mvn---szoftver-életciklus-menedzsment-maven-használatával-2-nap">JAVAX-MVN
                                 - Szoftver életciklus menedzsment Maven használatával (2 nap)</h1>
+                                <p><a href="https://www.training360.com/kepzes/java-mvn">A képzés oldala</a></p>
                             <p>Maven használata, életciklus, pluginek, függőségek, pom.xml
                                 optimalizálás</p>
                             <h2 id="ismertető">Ismertető</h2>
@@ -1466,6 +1534,7 @@
                             <h1 id="java-gdl---java-projektek-gradle-lel-2-nap">JAVA-GDL - Java
                                 projektek Gradle-lel (2 nap)</h1>
                             <p>Gradle használata, Gradle Java Plugin, lifecycle</p>
+                            <p><a href="https://www.training360.com/kepzes/java-gdl">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a Gradle eszköz részletes bemutatása.</p>
                             <p>A képzés számos gyakorlati feladatot tartalmaz, ezek megvalósításához
@@ -1537,6 +1606,7 @@
                                 implementálása Java projekten szabadon választható eszközökkel
                                 (JAVAX-CIP) (3 nap)</h1>
                             <p>Continuous Delivery pipeline kialakítása Java projekten</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-cip">A képzés oldala</a></p>
                             <h2 id="képzés-célja">Képzés célja</h2>
                             <p>A DevOps és a Continuous Delivery (folyamatos szállítás) olyan
                                 gyakorlatok és folyamatok összessége, amelyek célja a szoftverfejlesztés
@@ -1616,353 +1686,110 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="category">
-            <h1>Nagyvállalati alkalmazásfejlesztés</h1>
-
-            <div class="trainings">
-
-                <div class="training">
-                    <h1><a href="#">XML kezelés és SOAP/RESTful web-szolgáltatások</a></h1>
-                    <h2>JAVA-WS</h2>
-
-                    <div class="footer">
-                        <div class="footer-content">
-                            <span class="material-symbols-outlined day">
-                                sunny
-                            </span>
-                            3
-                            <span class="material-symbols-outlined signal">
-                                signal_cellular_alt_2_bar
-                            </span>
-                        </div>
-                        <div class="right-icon">
-                            <span class="material-symbols-outlined">
-                                person
-                            </span>
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1
-                                id="javax-ws---xml-kezelés-és-soaprestful-webszolgáltatások-megvalósítása-java-platformon-3-nap">
-                                JAVAX-WS
-                                - XML kezelés és SOAP/RESTful webszolgáltatások megvalósítása Java
-                                platformon (3 nap)</h1>
-                            <p>XML kezelés SAX, DOM, StAX használatával, JSON kezelés,
-                                webszolgáltatások JAX-WS és JAX-RS technológiákkal</p>
-                            <h2 id="ismertető">Ismertető</h2>
-                            <p>A képzés célja a SOAP és RESTful webszolgáltatások elméleti és
-                                gyakorlati bemutatása. Mivel a SOAP webszolgáltatások nagyban építenek
-                                az XML formátumra, ezért az is bemutatásra kerül az azt kezelő Java
-                                eszközökkel együtt. A képzés magába foglalja a DOM, SAX, StAX, JAX-WS,
-                                JAX-RS szabványok bemutatását.</p>
-                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
-                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
-                                build eszközzel, Jetty webkonténerrel, SOAPUi és Postman
-                                tesztelőeszközzel.</p>
-                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
-                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
-                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
-                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
-                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
-                                gyakorlati ismerete.</p>
-                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
-                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
-                                nyelvű, magyar slide-ok alapján.</p>
-                            <h2 id="tanfolyami-tematika">Tanfolyami tematika</h2>
-                            <ul>
-                                <li>Az XML definíciója, kialakulása, alkalmazási lehetőségei</li>
-                                <li>Karakterkódolás, alapfogalmak, szintaktika, elemek és attribútumok,
-                                    parserek és karakteradatok, névterek</li>
-                                <li>Jól formázottság, séma és DTD, XSD, validálás</li>
-                                <li>XHTML és XML viszonya, a DOM és kezelése</li>
-                                <li>XML lekérdezés: XPath</li>
-                                <li>XML transzformáció: Extensible Stylesheet Language Transformation
-                                    (XSLT)</li>
-                                <li>XML kezelése Java programokból: Java API for XML processing
-                                    (JAXP)</li>
-                                <li>Document Object Model (DOM), a fa felépítése, bejárása, módosítása –
-                                    attribútum, node, részfa</li>
-                                <li>Simple API for XML (SAX), eseménykezelés</li>
-                                <li>XPath, XSLT a Java-ban</li>
-                                <li>Streaming API for XML (StAX)</li>
-                                <li>StAX Cursor és Iterator API</li>
-                                <li>SOAP alapú webszolgáltatások: SOAP, WSDL, UDDI</li>
-                                <li>Binding JAXB technológiával</li>
-                                <li>Speciális esetek: körkörös referencia, öröklődés kezelése</li>
-                                <li>JAX-WS szabvány</li>
-                                <li>Kivételkezelés</li>
-                                <li>JAX-WS handlerek</li>
-                                <li>JAX-WS kliens</li>
-                                <li>SoapUI eszköz használata</li>
-                                <li>Automata tesztelés SoapUI használatával</li>
-                                <li>RESTful webszolgáltatások</li>
-                                <li>JAX-RS szabvány</li>
-                                <li>REST kliens</li>
-                                <li>Unit és integrációs tesztelés</li>
-                                <li>Tesztelés Postman használatával</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="training blended">
-                    <h1><a href="#">Java alapú webfejlesztés JSF technológiával</a></h1>
-                    <h2>JAVAX-JSF</h2>
-
-                    <div class="footer">
-                        <div class="footer-content">
-                            <span class="material-symbols-outlined day">
-                                sunny
-                            </span>
-                            2
-                            <span class="material-symbols-outlined signal">
-                                signal_cellular_alt_2_bar
-                            </span>
-                        </div>
-                        <div class="right-icon">
-                            <span class="material-symbols-outlined">
-                                desktop_windows
-                            </span>
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1 id="javax-jsf---java-alapú-webfejlesztés-jsf-technológiával-2-nap">JAVAX-JSF
-                                - Java alapú webfejlesztés JSF technológiával (2 nap)</h1>
-                            <p>Komplett webes alkalmazás készítése JSF-fel, validációval,
-                                AJAX-szal</p>
-                            <h2 id="ismertető">Ismertető</h2>
-                            <p>A képzés célja, hogy a résztvevők mélyrehatóan megismerjék a magasabb
-                                szintű, MVC alapú webes alkalmazások fejlesztését JSF technológia
-                                segítségével. Részletes bemutatásra kerül a JSF szabvány, gyakorlati
-                                példákkal kiegészítve. Szó esik még különböző JSF-re épülő
-                                komponenskészletekről, mint a PrimeFaces, és az üzleti logika réteggel
-                                való integrációjáról, Spring és Java EE - EJB környezetben is. Az
-                                oktatás során Maven build eszközt és IntelliJ IDEA fejlesztőeszközt
-                                használunk.</p>
-                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
-                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
-                                kezelés, csomagok, osztályok, interfészek, kivételkezelés. Ezenkívül a
-                                HTTP protokoll ismerete, alapszintű HTML/CSS tudás.</p>
-                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
-                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
-                                gyakorlati ismerete.</p>
-                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
-                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
-                                nyelvű, magyar slide-ok alapján.</p>
-                            <h2 id="tematika">Tematika</h2>
-                            <ul>
-                                <li>JSF bevezetés Java EE és Spring Boot környezetben, MVC,
-                                    Facelets</li>
-                                <li>Managed Beans, CDI</li>
-                                <li>Expression Language</li>
-                                <li>Navigáció és átirányítás</li>
-                                <li>Űrlap kezelés</li>
-                                <li>Egyszerű komponensek: panel, címke, stb.</li>
-                                <li>Egyszerű beviteli komponensek: szöveges bevitel, legördülő menü,
-                                    rádiógombok, stb.</li>
-                                <li>Redirect after post</li>
-                                <li>Teljesértékű CRUD alkalmazás készítése</li>
-                                <li>Controllerek unit tesztelése</li>
-                                <li>Integrációs tesztelés Arquillian használatával</li>
-                                <li>E2E tesztelés Selenium használatával</li>
-                                <li>Űrlap GET metódussal</li>
-                                <li>Űrlap előzetes feltöltése</li>
-                                <li>Fájl fel- és letöltés</li>
-                                <li>Konvertálás, dátumkezelés</li>
-                                <li>Adatbevitel ellenőrzése, validálás felületen, Bean Validationnel és
-                                    üzleti logikában</li>
-                                <li>Ismétlődés és panel típusú komponensek</li>
-                                <li>Hibakezelés</li>
-                                <li>Többnyelvű alkalmazások fejlesztése, I18N, nyelv váltása</li>
-                                <li>Stílus, erőforrás állományok kezelés</li>
-                                <li>Template kezelés</li>
-                                <li>Navigációs szabályok</li>
-                                <li>AJAX</li>
-                                <li>Flow</li>
-                                <li>Kompozit komponensek</li>
-                                <li>JSF implementációk, PrimeFaces</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="training">
-                    <h1><a href="#">Java alapú webfejlesztés Servlet és JSP technológiákkal</a></h1>
-                    <h2>JAVA-JSP</h2>
-
-                    <div class="footer">
-                        <div class="footer-content">
-                            <span class="material-symbols-outlined day">
-                                sunny
-                            </span>
-                            3
-                            <span class="material-symbols-outlined signal">
-                                signal_cellular_alt_2_bar
-                            </span>
-                        </div>
-                        <div class="right-icon">
-                            <span class="material-symbols-outlined">
-                                person
-                            </span>
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1 id="java-alapú-webfejlesztés-servlet-és-jsp-technológiákkal-java-jsp-3-nap">Java
-                                alapú webfejlesztés Servlet és JSP technológiákkal (JAVA-JSP) (3
-                                nap)</h1>
-                            <p>HTTP protokoll és annak kezelése Servlet technológiával, JSP oldalak,
-                                standard és saját fejlesztésű taglibek</p>
-                            <h2 id="ismertető">Ismertető</h2>
-                            <p>A képzés célja, hogy a résztvevők megszerezzék azokat a
-                                kompetenciákat, amelyek segítségével korábbi SE programozási ismeretekre
-                                építve, Servlet és JSP technológiák felhasználásával webes alkalmazást
-                                tudnak fejleszteni. A képzés hasznos azok számára is, akik fejlettebb
-                                keretrendszereket használnak (pl. JSF, Spring MVC, stb.), azonban
-                                szeretnék megérteni az azokat kiszolgáló szabványokat, megoldásokat.</p>
-                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
-                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
-                                build eszközzel, Jetty (egységes igény szerint Tomcat)
-                                webkonténerrel.</p>
-                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
-                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
-                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
-                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
-                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
-                                gyakorlati ismerete.</p>
-                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
-                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
-                                nyelvű, magyar slide-ok alapján.</p>
-                            <h2 id="tematika">Tematika</h2>
-                            <ul>
-                                <li>HTTP, mint állapotmentes protokoll.</li>
-                                <li>Servlet API alapjai, Servlet életciklusa, Servlet konténer,
-                                    Servletek környezete.</li>
-                                <li>Request és response.</li>
-                                <li>Redirect és forward.</li>
-                                <li>Hozzáférés header és cookie értékekhez.</li>
-                                <li>Session fogalma.</li>
-                                <li>Hibakezelés.</li>
-                                <li>Szálbiztonság, párhuzamossági megfontolások.</li>
-                                <li>MVC, formok feldolgozása, model átvitele Servlet és JSP között.</li>
-                                <li>Redirect after post tervezési minta.</li>
-                                <li>JSP alapok, JSP direktívák, scriptletek, deklarációk.</li>
-                                <li>JSP Standard Tag Library (JSTL).</li>
-                                <li>Saját fejlesztésű JSP taglib-ek.</li>
-                                <li>Fájlok kiszolgálása.</li>
-                                <li>Biztonság, security.</li>
-                                <li>Servlet filterek.</li>
-                                <li>Adatbázis kapcsolatok létrehozása.</li>
-                                <li>Konfiguráció <code>web.xml</code> állomány nélkül, Java
-                                    konfiguráció, Servlet 3.0 újdonságai.</li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="training blended">
-                    <h1><a href="#">Enterprise alkalmazás-fejlesztés Java EE környezetben</a></h1>
-                    <h2>JAVAX-EE</h2>
-
-                    <div class="footer">
-                        <div class="footer-content">
-                            <span class="material-symbols-outlined day">
-                                sunny
-                            </span>
-                            3
-                            <span class="material-symbols-outlined signal">
-                                signal_cellular_alt_2_bar
-                            </span>
-                        </div>
-                        <div class="right-icon">
-                            <span class="material-symbols-outlined">
-                                desktop_windows
-                            </span>
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1 id="javax-ee---enterprise-alkalmazásfejlesztés-java-ee-környezetben-3-nap">JAVAX-EE
-                                - Enterprise alkalmazásfejlesztés Java EE környezetben (3 nap)</h1>
-                            <p>Részletes CDI, Bean Validation, EJB technológiai bemutatás, bevezetés
-                                a JPA, JSF, JMS és JAX-WS, JAX-RS szabványokba</p>
-                            <h2 id="ismertető">Ismertető</h2>
-                            <p>A képzés célja megismertetni a résztvevőket a Java EE technológia
-                                komponenseivel. A képzés részletesen tárgyalja a Java EE, CDI, Bean
-                                Validation, EJB szabványt, azonban a Servlet/JSP, JPA, JAX-WS, JAX-RS és
-                                JMS technológiákat csak integrációs szempontból vizsgálja, azok
-                                részletes bemutatása külön képzéseken történik.</p>
-                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
-                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
-                                build eszközzel, WildFly alkalmazásszerverrel (egységes igény szerint
-                                WebSphere vagy WebLogic).</p>
-                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
-                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
-                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
-                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
-                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
-                                gyakorlati ismerete.</p>
-                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
-                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
-                                nyelvű, magyar slide-ok alapján.</p>
-                            <h2 id="tematika">Tematika</h2>
-                            <ul>
-                                <li>Nagyvállalati alkalmazások tulajdonságai, ezekkel szemben támasztott
-                                    követelmények</li>
-                                <li>Alkalmazásszerverek, gyártók és termékeik</li>
-                                <li>Java EE API-k áttekintése</li>
-                                <li>Java EE és EJB szabvány</li>
-                                <li>CDI, Weld implementáció, dependency injection</li>
-                                <li>Unit és integrációs tesztelés</li>
-                                <li>Háromrétegű alkalmazás, servlet és JSP felülettel</li>
-                                <li>Űrlap kezelése</li>
-                                <li>Java EE alkalmazás integrációs tesztelése Arquillian és Selenium
-                                    WebDriver eszközökkel</li>
-                                <li>Adatbázis-hozzáférés JDBC-vel</li>
-                                <li><code>DataSource</code> és konfigurálása</li>
-                                <li>DAO tervezési minta</li>
-                                <li>Séma inicializálás Flyway eszközzel</li>
-                                <li>JPA használata Java EE-ben</li>
-                                <li>Programozott és deklaratív tranzakciókezelés</li>
-                                <li>EJB komponensek, Session Bean (Stateless Session Bean, Stateful
-                                    Session Bean, Singleton)</li>
-                                <li>Java EE kliens, Application Client Container (ACC).</li>
-                                <li>Lokális és távoli interfészek</li>
-                                <li>Aspect Oriented Programming, Callback metódusok</li>
-                                <li>Időzítők, Timer Service</li>
-                                <li>Bevezetés a JSF szabvány használatába</li>
-                                <li>Bean Validation, beépített és saját validációk, I18N, validation
-                                    group</li>
-                                <li>Naplózás</li>
-                                <li>SOAP webszolgáltatások implementálása JAX-WS segítségével</li>
-                                <li>RESTful webszolgáltatások implementálása JAX-RS segítségével</li>
-                                <li>JMS, üzenetküldés és fogadás, Message Driven Bean</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>        
         <div class="category">
             <h1>Adatbáziskezelés</h1>
 
             <div class="trainings">
 
+                <div class="training">
+                    <h1><a href="#">SQL Java programozóknak</a></h1>
+                    <h2>JAVA-SQL</h2>
+
+                    <div class="footer">
+                        <div class="triangle-left"></div>
+                        <div class="left-icon">
+                            <span class="material-symbols-outlined">
+                                new_releases
+                            </span>
+                        </div>
+                        <div class="footer-content">
+                            <span class="material-symbols-outlined day">
+                                sunny
+                            </span>
+                            3
+                            <span class="material-symbols-outlined signal">
+                                signal_cellular_alt_1_bar
+                            </span>
+                        </div>
+                        <div class="right-icon">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 id="sql-java-programozóknak-java-sql-3-nap">SQL Java programozóknak
+                                (JAVA-SQL) (3 nap)</h1>
+                            <p>SQL nyelv és használata különböző Java technológiákkal</p>
+                            <p><a href="https://www.training360.com/kepzes/java-sql">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
+                            <p>Az adatok hatékony kezelése és lekérdezése létfontosságú minden olyan
+                                vállalkozás számára, amely az információkat szeretné használni a
+                                döntéshozatalban és az üzleti növekedésben. Az SQL az adatbázisok
+                                kezelésének egyik alapvető eszköze, amely lehetővé teszi az adatok gyors
+                                és pontos feldolgozását</p>
+                            <p>Ezen a képzésen a résztvevők egy átfogó megértést nyerhettek az SQL
+                                nyelvről, annak alapvető szerkezetéről és kulcsszerepéről az adatbázisok
+                                kezelésében. A célunk az, hogy felkészítsük a résztvevőket arra, hogy
+                                hatékonyan dolgozzatok adatokkal, valamint képesek legyetek komplex
+                                lekérdezéseket és adatmanipulációkat készíteni.</p>
+                            <p>A képzés során praktikus gyakorlatokon és valós üzleti helyzeteken
+                                keresztül tanulható meg az SQL. Bemutatjuk a munkát MySQL, MariaDB és
+                                PostgreSQL használatával is. A képzés végén egy kis ízelítőt nyújtunk
+                                abból, hogyan kell SQL utasításokat JAva kódból kiadni.</p>
+                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
+                            <p>Alapszintű Java programozási ismeretek.</p>
+                            <h2 id="tematika">Tematika</h2>
+                            <ul>
+                                <li>Különböző adatbázisok használatba vétele (MySQL, MariaDB és
+                                    PostgreSQL)</li>
+                                <li>Különböző kliensek használatba vétele (DBeaver, HeidiSQL, MySQL
+                                    Workbench, pgAdmin, IntelliJ IDEA)</li>
+                                <li>Adatbázisokkal kapcsolatos alapfogalmak</li>
+                                <li>Adattípusok és táblák</li>
+                                <li>SELECT, DISTINCT - Egyszerű lekérdezések</li>
+                                <li>WHERE - Adatok kiválasztása feltételek alapján</li>
+                                <li>NULL értékek kezelése</li>
+                                <li>AND, OR, NOT - Feltételek összekapcsolása a lekérdezésekben</li>
+                                <li>ORDER BY - Találatok sorba rendezése</li>
+                                <li>Lapozás</li>
+                                <li>MIN, MAX - A minimum és maximum értékek keresése</li>
+                                <li>COUNT, AVG, SUM - Megszámlálás, átlagolás és összegzés</li>
+                                <li>GROUP BY, HAVING - Találatok csoportosítása, feltételek
+                                    csoportokra</li>
+                                <li>LIKE - Keresés hasonlóság alapján</li>
+                                <li>INSERT - Új rekordok beszúrása az adattáblákba</li>
+                                <li>UPDATE - Az egyes rekordok frissítése</li>
+                                <li>DELETE - Rekordok törlése</li>
+                                <li>JOIN - Táblák összekapcsolása (közvetlen kapcsolat, kapcsolat
+                                    önmagával, kapcsolat kapcsolótáblával)</li>
+                                <li>UNION, EXCEPT és INTERSECT - Eredmények egyesítése</li>
+                                <li>Operátorok és függvények</li>
+                                <li>Dátum és idő kezelése</li>
+                                <li>Allekérdezések</li>
+                                <li>DDL</li>
+                                <li>CREATE - Tábla létrehozása</li>
+                                <li>ALTER - Tábla módosítása</li>
+                                <li>DROP - Tábla eldobása</li>
+                                <li>Elsődleges és idegen kulcsok</li>
+                                <li>Azonosítók kiosztása</li>
+                                <li>Megszorítások</li>
+                                <li>Normál formák</li>
+                                <li>Tranzakciókezelés</li>
+                                <li>Bevezetés a JDBC használatába</li>
+                                <li>Bevezetés a Spring JdbcTemplate használatába</li>
+                                <li>Bevezetés a Spring Data JDBC használatába</li>
+                                <li>Bevezetés a MyBatis használatába</li>
+                                <li>Bevezetés a JOOQ használatába</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="training blended">
                     <h1><a href="#">Perzisztencia, adatbázis programozás JDBC és JPA technológiákkal</a></h1>
                     <h2>JAVA-JPA</h2>
@@ -1994,6 +1821,7 @@
                                 nap)</h1>
                             <p>Natív JDBC és Spring JdbcTemplate, JPA, entitások és kapcsolataik,
                                 Spring Data JPA és Java EE környezetben</p>
+                                <p><a href="https://www.training360.com/kepzes/java-jpa">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja annak megismertetése, hogy hogyan lehet relációs
                                 adatbázisban adatokat tárolni és kezelni Java platformon, a JDBC és JPA
@@ -2090,6 +1918,7 @@
                                 nap)</h1>
                             <p>Haladó JPA fogalmak, lazy kapcsolatok, entity graph, lock,
                                 teljesítmény hangolás</p>
+                            <p><a href="https://www.training360.com/kepzes/java-jpa2">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A <em>Haladó JPA</em> képzés ismerteti a JPA haladó fogalmait,
                                 úgymint lazy/eager fetch, entity graph, cascade műveletek,
@@ -2138,103 +1967,6 @@
                     </div>
                 </div>
                 <div class="training">
-                    <h1><a href="#">SQL Java programozóknak</a></h1>
-                    <h2>JAVA-SQL</h2>
-
-                    <div class="footer">
-                        <div class="triangle-left"></div>
-                        <div class="left-icon">
-                            <span class="material-symbols-outlined">
-                                new_releases
-                            </span>
-                        </div>
-                        <div class="footer-content">
-                            <span class="material-symbols-outlined day">
-                                sunny
-                            </span>
-                            3
-                            <span class="material-symbols-outlined signal">
-                                signal_cellular_alt_1_bar
-                            </span>
-                        </div>
-                        <div class="right-icon">
-                            <span class="material-symbols-outlined">
-                                person
-                            </span>
-                        </div>
-                        <div class="triangle"></div>
-                    </div>
-
-                    <div class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1 id="sql-java-programozóknak-java-sql-3-nap">SQL Java programozóknak
-                                (JAVA-SQL) (3 nap)</h1>
-                            <p>SQL nyelv és használata különböző Java technológiákkal</p>
-                            <h2 id="ismertető">Ismertető</h2>
-                            <p>Az adatok hatékony kezelése és lekérdezése létfontosságú minden olyan
-                                vállalkozás számára, amely az információkat szeretné használni a
-                                döntéshozatalban és az üzleti növekedésben. Az SQL az adatbázisok
-                                kezelésének egyik alapvető eszköze, amely lehetővé teszi az adatok gyors
-                                és pontos feldolgozását</p>
-                            <p>Ezen a képzésen a résztvevők egy átfogó megértést nyerhettek az SQL
-                                nyelvről, annak alapvető szerkezetéről és kulcsszerepéről az adatbázisok
-                                kezelésében. A célunk az, hogy felkészítsük a résztvevőket arra, hogy
-                                hatékonyan dolgozzatok adatokkal, valamint képesek legyetek komplex
-                                lekérdezéseket és adatmanipulációkat készíteni.</p>
-                            <p>A képzés során praktikus gyakorlatokon és valós üzleti helyzeteken
-                                keresztül tanulható meg az SQL. Bemutatjuk a munkát MySQL, MariaDB és
-                                PostgreSQL használatával is. A képzés végén egy kis ízelítőt nyújtunk
-                                abból, hogyan kell SQL utasításokat JAva kódból kiadni.</p>
-                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
-                            <p>Alapszintű Java programozási ismeretek.</p>
-                            <h2 id="tematika">Tematika</h2>
-                            <ul>
-                                <li>Különböző adatbázisok használatba vétele (MySQL, MariaDB és
-                                    PostgreSQL)</li>
-                                <li>Különböző kliensek használatba vétele (DBeaver, HeidiSQL, MySQL
-                                    Workbench, pgAdmin, IntelliJ IDEA)</li>
-                                <li>Adatbázisokkal kapcsolatos alapfogalmak</li>
-                                <li>Adattípusok és táblák</li>
-                                <li>SELECT, DISTINCT - Egyszerű lekérdezések</li>
-                                <li>WHERE - Adatok kiválasztása feltételek alapján</li>
-                                <li>NULL értékek kezelése</li>
-                                <li>AND, OR, NOT - Feltételek összekapcsolása a lekérdezésekben</li>
-                                <li>ORDER BY - Találatok sorba rendezése</li>
-                                <li>Lapozás</li>
-                                <li>MIN, MAX - A minimum és maximum értékek keresése</li>
-                                <li>COUNT, AVG, SUM - Megszámlálás, átlagolás és összegzés</li>
-                                <li>GROUP BY, HAVING - Találatok csoportosítása, feltételek
-                                    csoportokra</li>
-                                <li>LIKE - Keresés hasonlóság alapján</li>
-                                <li>INSERT - Új rekordok beszúrása az adattáblákba</li>
-                                <li>UPDATE - Az egyes rekordok frissítése</li>
-                                <li>DELETE - Rekordok törlése</li>
-                                <li>JOIN - Táblák összekapcsolása (közvetlen kapcsolat, kapcsolat
-                                    önmagával, kapcsolat kapcsolótáblával)</li>
-                                <li>UNION, EXCEPT és INTERSECT - Eredmények egyesítése</li>
-                                <li>Operátorok és függvények</li>
-                                <li>Dátum és idő kezelése</li>
-                                <li>Allekérdezések</li>
-                                <li>DDL</li>
-                                <li>CREATE - Tábla létrehozása</li>
-                                <li>ALTER - Tábla módosítása</li>
-                                <li>DROP - Tábla eldobása</li>
-                                <li>Elsődleges és idegen kulcsok</li>
-                                <li>Azonosítók kiosztása</li>
-                                <li>Megszorítások</li>
-                                <li>Normál formák</li>
-                                <li>Tranzakciókezelés</li>
-                                <li>Bevezetés a JDBC használatába</li>
-                                <li>Bevezetés a Spring JdbcTemplate használatába</li>
-                                <li>Bevezetés a Spring Data JDBC használatába</li>
-                                <li>Bevezetés a MyBatis használatába</li>
-                                <li>Bevezetés a JOOQ használatába</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="training">
                     <h1><a href="#">NoSQL adatbázisok kezelése Spring Data használatával</a></h1>
                     <h2>JAVAX-NOSQL</h2>
 
@@ -2268,6 +2000,7 @@
                             <h1 id="nosql-adatbázisok-kezelése-spring-data-használatával-2-nap">NoSQL
                                 adatbázisok kezelése Spring Data használatával (2 nap)</h1>
                             <p>MongoDB, Elasticsearch, Apache Cassandra, Redis és Neo4j</p>
+                            <p><a href="https://www.training360.com/kepzes/java-nosql">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A NoSQL adatbázisok forradalmasították az adatkezelést és -tárolást a
                                 hagyományos relációs adatbázisokhoz képest. A NoSQL, vagy más néven “not
@@ -2306,7 +2039,7 @@
 
                 <div class="training blended">
                     <h1><a href="#">Microservice alkalmazás felépítése Spring Boottal és Dockerrel</a></h1>
-                    <h2>JAVA-MCR</h2>
+                    <h2>JAVAX-MCR</h2>
 
                     <div class="footer">
                         <div class="footer-content">
@@ -2335,6 +2068,7 @@
                                 alkalmazás felépítése Spring Boot keretrendszerrel Docker környezetben
                                 (JAVAX-MCR) (3 nap)</h1>
                             <p>Spring Boot, Docker, REST, JPA, Spring Data, Twelve-Factor app</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-mcr">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja annak ismertetése, hogyan lehet egy microservice
                                 architektúrába illeszthető alkalmazást fejleszteni Spring Boottal, mikre
@@ -2417,6 +2151,7 @@
                                 alkalmazás felépítése Spring Boot keretrendszerrel AWS felhő
                                 környezetben (JAVAX-AWS) (3 nap)</h1>
                             <p>Spring Boot, AWS, Elastic Beanstalk, EC2, RDS, S3, SQS, Elastic</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-aws">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja annak bemutatása gyakorlati példákon keresztül, hogy
                                 hogyan lehet egy Spring Boot alkalmazást az AWS felhőszolgáltatásra
@@ -2482,6 +2217,7 @@
                                 - Java 8 plusz újdonságok, funkcionális programozás (2 nap)</h1>
                             <p>Funkcionális programozás, lambda kifejezések, streamek és az összes
                                 újdonság, mely a Java 8-ban jelent meg</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-spr">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A Java történetében az egyik legtöbb újdonságot a Java 8-as verziója
                                 hozta, ugyanis ebben jelentek meg a funkcionális programozási eszközök.
@@ -2565,6 +2301,7 @@
                                 - Haladó Spring keretrendszer eszközök (3 nap)</h1>
                             <p>Haladó Spring fogalmak, aszinkron és eseményalapú feldolgozás,
                                 cache-elés, integráció JMS-sel és webszolgáltatásokkal</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-spr2">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a Spring Framework haladó fogalmainak bemutatása. Ide
                                 tartoznak különböző haladó témakörök adatbáziskezeléssel kapcsolatban
@@ -2639,6 +2376,7 @@
                                 (JAVAX-SPCL) (3 nap)</h1>
                             <p>Microservice tervezési minták felhasználásával, Spring Boot
                                 service-ekkel, néhány Spring Cloud projekt bevezetésével</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-spcl">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés során a microservice tervezési minták alapján kerül
                                 felépítésre egy több, mint tíz, főleg Spring Boot microservice-ekből
@@ -2736,6 +2474,7 @@
                                 Spring Cloud projektek a gyakorlatban (JAVAX-SPCL2) (2 nap)</h1>
                             <p>Spring Cloud projektek részletes ismertetése gyakorlati feladatokon
                                 keresztül</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-spcl2">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja a fontosabb Spring Cloud projektek bemutatása. Minden
                                 projekthez több gyakorlati feladat is tartozik.</p>
@@ -2870,6 +2609,8 @@
                             <h1 id="reaktív-programozás-spring-boot-használatával-javax-react-2-nap">Reaktív
                                 programozás Spring Boot használatával (JAVAX-REACT) (2 nap)</h1>
                             <p>Reaktív programozás Reactor projekt, WebFlux használatával</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-react">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
                             <p>A reaktív programozás egy olyan fejlesztési megközelítés, amely
                                 lehetővé teszi az alkalmazások aszinkron és skálázható működését a nagy
                                 terheléssel rendelkező rendszerekben. A reaktív alkalmazások
@@ -2966,7 +2707,7 @@
                 </div>
                 <div class="training">
                     <h1><a href="#">Spring Boot 3 újdonságai</a></h1>
-                    <h2>JAVAX-SB2</h2>
+                    <h2>JAVAX-SB3</h2>
 
                     <div class="footer">
                         <div class="triangle-left"></div>
@@ -2999,6 +2740,7 @@
                                 újdonságai (JAVAX-SB3) (1 nap)</h1>
                             <p>Spring Boot 3 és későbbi verziók újdonságai gyakorlati
                                 feladatokkal</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-sb3">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A Spring Boot 3 számos izgalmas újdonságot hozott a fejlesztők
                                 számára. Az egyik legfontosabb fejlesztés a továbbfejlesztett támogatás
@@ -3070,6 +2812,7 @@
                                 - Felhasználó- és jogosultságkezelés Spring Security használatával (2
                                 nap)</h1>
                             <p>Spring Security, JWT tokenek és OAuth 2</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-spsc">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja, hogy átfogó betekintést adjon a Spring Security
                                 keretrendszerbe, amely az egyik legnépszerűbb megoldás a Java-alapú
@@ -3156,6 +2899,351 @@
             </div>
         </div>
         <div class="category">
+            <h1>Nagyvállalati alkalmazásfejlesztés</h1>
+
+            <div class="trainings">
+
+                <div class="training">
+                    <h1><a href="#">XML kezelés és SOAP/RESTful web-szolgáltatások</a></h1>
+                    <h2>JAVA-WS</h2>
+
+                    <div class="footer">
+                        <div class="footer-content">
+                            <span class="material-symbols-outlined day">
+                                sunny
+                            </span>
+                            3
+                            <span class="material-symbols-outlined signal">
+                                signal_cellular_alt_2_bar
+                            </span>
+                        </div>
+                        <div class="right-icon">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1
+                                id="javax-ws---xml-kezelés-és-soaprestful-webszolgáltatások-megvalósítása-java-platformon-3-nap">
+                                JAVAX-WS
+                                - XML kezelés és SOAP/RESTful webszolgáltatások megvalósítása Java
+                                platformon (3 nap)</h1>
+                            <p>XML kezelés SAX, DOM, StAX használatával, JSON kezelés,
+                                webszolgáltatások JAX-WS és JAX-RS technológiákkal</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-ws">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
+                            <p>A képzés célja a SOAP és RESTful webszolgáltatások elméleti és
+                                gyakorlati bemutatása. Mivel a SOAP webszolgáltatások nagyban építenek
+                                az XML formátumra, ezért az is bemutatásra kerül az azt kezelő Java
+                                eszközökkel együtt. A képzés magába foglalja a DOM, SAX, StAX, JAX-WS,
+                                JAX-RS szabványok bemutatását.</p>
+                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
+                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
+                                build eszközzel, Jetty webkonténerrel, SOAPUi és Postman
+                                tesztelőeszközzel.</p>
+                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
+                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
+                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
+                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
+                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
+                                gyakorlati ismerete.</p>
+                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
+                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
+                                nyelvű, magyar slide-ok alapján.</p>
+                            <h2 id="tanfolyami-tematika">Tanfolyami tematika</h2>
+                            <ul>
+                                <li>Az XML definíciója, kialakulása, alkalmazási lehetőségei</li>
+                                <li>Karakterkódolás, alapfogalmak, szintaktika, elemek és attribútumok,
+                                    parserek és karakteradatok, névterek</li>
+                                <li>Jól formázottság, séma és DTD, XSD, validálás</li>
+                                <li>XHTML és XML viszonya, a DOM és kezelése</li>
+                                <li>XML lekérdezés: XPath</li>
+                                <li>XML transzformáció: Extensible Stylesheet Language Transformation
+                                    (XSLT)</li>
+                                <li>XML kezelése Java programokból: Java API for XML processing
+                                    (JAXP)</li>
+                                <li>Document Object Model (DOM), a fa felépítése, bejárása, módosítása –
+                                    attribútum, node, részfa</li>
+                                <li>Simple API for XML (SAX), eseménykezelés</li>
+                                <li>XPath, XSLT a Java-ban</li>
+                                <li>Streaming API for XML (StAX)</li>
+                                <li>StAX Cursor és Iterator API</li>
+                                <li>SOAP alapú webszolgáltatások: SOAP, WSDL, UDDI</li>
+                                <li>Binding JAXB technológiával</li>
+                                <li>Speciális esetek: körkörös referencia, öröklődés kezelése</li>
+                                <li>JAX-WS szabvány</li>
+                                <li>Kivételkezelés</li>
+                                <li>JAX-WS handlerek</li>
+                                <li>JAX-WS kliens</li>
+                                <li>SoapUI eszköz használata</li>
+                                <li>Automata tesztelés SoapUI használatával</li>
+                                <li>RESTful webszolgáltatások</li>
+                                <li>JAX-RS szabvány</li>
+                                <li>REST kliens</li>
+                                <li>Unit és integrációs tesztelés</li>
+                                <li>Tesztelés Postman használatával</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="training blended">
+                    <h1><a href="#">Java alapú webfejlesztés JSF technológiával</a></h1>
+                    <h2>JAVAX-JSF</h2>
+
+                    <div class="footer">
+                        <div class="footer-content">
+                            <span class="material-symbols-outlined day">
+                                sunny
+                            </span>
+                            2
+                            <span class="material-symbols-outlined signal">
+                                signal_cellular_alt_2_bar
+                            </span>
+                        </div>
+                        <div class="right-icon">
+                            <span class="material-symbols-outlined">
+                                desktop_windows
+                            </span>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 id="javax-jsf---java-alapú-webfejlesztés-jsf-technológiával-2-nap">JAVAX-JSF
+                                - Java alapú webfejlesztés JSF technológiával (2 nap)</h1>
+                            <p>Komplett webes alkalmazás készítése JSF-fel, validációval,
+                                AJAX-szal</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-jsf">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
+                            <p>A képzés célja, hogy a résztvevők mélyrehatóan megismerjék a magasabb
+                                szintű, MVC alapú webes alkalmazások fejlesztését JSF technológia
+                                segítségével. Részletes bemutatásra kerül a JSF szabvány, gyakorlati
+                                példákkal kiegészítve. Szó esik még különböző JSF-re épülő
+                                komponenskészletekről, mint a PrimeFaces, és az üzleti logika réteggel
+                                való integrációjáról, Spring és Java EE - EJB környezetben is. Az
+                                oktatás során Maven build eszközt és IntelliJ IDEA fejlesztőeszközt
+                                használunk.</p>
+                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
+                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
+                                kezelés, csomagok, osztályok, interfészek, kivételkezelés. Ezenkívül a
+                                HTTP protokoll ismerete, alapszintű HTML/CSS tudás.</p>
+                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
+                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
+                                gyakorlati ismerete.</p>
+                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
+                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
+                                nyelvű, magyar slide-ok alapján.</p>
+                            <h2 id="tematika">Tematika</h2>
+                            <ul>
+                                <li>JSF bevezetés Java EE és Spring Boot környezetben, MVC,
+                                    Facelets</li>
+                                <li>Managed Beans, CDI</li>
+                                <li>Expression Language</li>
+                                <li>Navigáció és átirányítás</li>
+                                <li>Űrlap kezelés</li>
+                                <li>Egyszerű komponensek: panel, címke, stb.</li>
+                                <li>Egyszerű beviteli komponensek: szöveges bevitel, legördülő menü,
+                                    rádiógombok, stb.</li>
+                                <li>Redirect after post</li>
+                                <li>Teljesértékű CRUD alkalmazás készítése</li>
+                                <li>Controllerek unit tesztelése</li>
+                                <li>Integrációs tesztelés Arquillian használatával</li>
+                                <li>E2E tesztelés Selenium használatával</li>
+                                <li>Űrlap GET metódussal</li>
+                                <li>Űrlap előzetes feltöltése</li>
+                                <li>Fájl fel- és letöltés</li>
+                                <li>Konvertálás, dátumkezelés</li>
+                                <li>Adatbevitel ellenőrzése, validálás felületen, Bean Validationnel és
+                                    üzleti logikában</li>
+                                <li>Ismétlődés és panel típusú komponensek</li>
+                                <li>Hibakezelés</li>
+                                <li>Többnyelvű alkalmazások fejlesztése, I18N, nyelv váltása</li>
+                                <li>Stílus, erőforrás állományok kezelés</li>
+                                <li>Template kezelés</li>
+                                <li>Navigációs szabályok</li>
+                                <li>AJAX</li>
+                                <li>Flow</li>
+                                <li>Kompozit komponensek</li>
+                                <li>JSF implementációk, PrimeFaces</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="training">
+                    <h1><a href="#">Java alapú webfejlesztés Servlet és JSP technológiákkal</a></h1>
+                    <h2>JAVA-JSP</h2>
+
+                    <div class="footer">
+                        <div class="footer-content">
+                            <span class="material-symbols-outlined day">
+                                sunny
+                            </span>
+                            3
+                            <span class="material-symbols-outlined signal">
+                                signal_cellular_alt_2_bar
+                            </span>
+                        </div>
+                        <div class="right-icon">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 id="java-alapú-webfejlesztés-servlet-és-jsp-technológiákkal-java-jsp-3-nap">Java
+                                alapú webfejlesztés Servlet és JSP technológiákkal (JAVA-JSP) (3
+                                nap)</h1>
+                            <p>HTTP protokoll és annak kezelése Servlet technológiával, JSP oldalak,
+                                standard és saját fejlesztésű taglibek</p>
+                            <p><a href="https://www.training360.com/kepzes/java-jsp">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
+                            <p>A képzés célja, hogy a résztvevők megszerezzék azokat a
+                                kompetenciákat, amelyek segítségével korábbi SE programozási ismeretekre
+                                építve, Servlet és JSP technológiák felhasználásával webes alkalmazást
+                                tudnak fejleszteni. A képzés hasznos azok számára is, akik fejlettebb
+                                keretrendszereket használnak (pl. JSF, Spring MVC, stb.), azonban
+                                szeretnék megérteni az azokat kiszolgáló szabványokat, megoldásokat.</p>
+                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
+                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
+                                build eszközzel, Jetty (egységes igény szerint Tomcat)
+                                webkonténerrel.</p>
+                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
+                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
+                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
+                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
+                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
+                                gyakorlati ismerete.</p>
+                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
+                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
+                                nyelvű, magyar slide-ok alapján.</p>
+                            <h2 id="tematika">Tematika</h2>
+                            <ul>
+                                <li>HTTP, mint állapotmentes protokoll.</li>
+                                <li>Servlet API alapjai, Servlet életciklusa, Servlet konténer,
+                                    Servletek környezete.</li>
+                                <li>Request és response.</li>
+                                <li>Redirect és forward.</li>
+                                <li>Hozzáférés header és cookie értékekhez.</li>
+                                <li>Session fogalma.</li>
+                                <li>Hibakezelés.</li>
+                                <li>Szálbiztonság, párhuzamossági megfontolások.</li>
+                                <li>MVC, formok feldolgozása, model átvitele Servlet és JSP között.</li>
+                                <li>Redirect after post tervezési minta.</li>
+                                <li>JSP alapok, JSP direktívák, scriptletek, deklarációk.</li>
+                                <li>JSP Standard Tag Library (JSTL).</li>
+                                <li>Saját fejlesztésű JSP taglib-ek.</li>
+                                <li>Fájlok kiszolgálása.</li>
+                                <li>Biztonság, security.</li>
+                                <li>Servlet filterek.</li>
+                                <li>Adatbázis kapcsolatok létrehozása.</li>
+                                <li>Konfiguráció <code>web.xml</code> állomány nélkül, Java
+                                    konfiguráció, Servlet 3.0 újdonságai.</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="training blended">
+                    <h1><a href="#">Enterprise alkalmazás-fejlesztés Java EE környezetben</a></h1>
+                    <h2>JAVAX-EE</h2>
+
+                    <div class="footer">
+                        <div class="footer-content">
+                            <span class="material-symbols-outlined day">
+                                sunny
+                            </span>
+                            3
+                            <span class="material-symbols-outlined signal">
+                                signal_cellular_alt_2_bar
+                            </span>
+                        </div>
+                        <div class="right-icon">
+                            <span class="material-symbols-outlined">
+                                desktop_windows
+                            </span>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 id="javax-ee---enterprise-alkalmazásfejlesztés-java-ee-környezetben-3-nap">JAVAX-EE
+                                - Enterprise alkalmazásfejlesztés Java EE környezetben (3 nap)</h1>
+                            <p>Részletes CDI, Bean Validation, EJB technológiai bemutatás, bevezetés
+                                a JPA, JSF, JMS és JAX-WS, JAX-RS szabványokba</p>
+                                <p><a href="https://www.training360.com/kepzes/javax-ee">A képzés oldala</a></p>
+                            <h2 id="ismertető">Ismertető</h2>
+                            <p>A képzés célja megismertetni a résztvevőket a Java EE technológia
+                                komponenseivel. A képzés részletesen tárgyalja a Java EE, CDI, Bean
+                                Validation, EJB szabványt, azonban a Servlet/JSP, JPA, JAX-WS, JAX-RS és
+                                JMS technológiákat csak integrációs szempontból vizsgálja, azok
+                                részletes bemutatása külön képzéseken történik.</p>
+                            <p>A képzés komplex gyakorlati feladatokat tartalmaz IntelliJ IDEA
+                                fejlesztőeszközzel (egységes igény szerint Eclipse/NetBeans), Maven
+                                build eszközzel, WildFly alkalmazásszerverrel (egységes igény szerint
+                                WebSphere vagy WebLogic).</p>
+                            <h2 id="szükséges-előképzettség">Szükséges előképzettség</h2>
+                            <p>A következő témakörök ismerete elvárt: biztonságos fejlesztőeszköz
+                                kezelés, csomagok, osztályok, interfészek, kivételkezelés.</p>
+                            <p>Előfeltétele a <em>Java SE alapok (JAVA-BSC)</em> és a <em>Java SE
+                                    haladó (JAVA-ADV)</em> képzések elvégzése, vagy azon képzések anyagának
+                                gyakorlati ismerete.</p>
+                            <p>Mivel a tananyagok egy része angol nyelvű, ezért alapfokú,
+                                dokumentumolvasás-szintű angol nyelvtudás szükséges. A képzés magyar
+                                nyelvű, magyar slide-ok alapján.</p>
+                            <h2 id="tematika">Tematika</h2>
+                            <ul>
+                                <li>Nagyvállalati alkalmazások tulajdonságai, ezekkel szemben támasztott
+                                    követelmények</li>
+                                <li>Alkalmazásszerverek, gyártók és termékeik</li>
+                                <li>Java EE API-k áttekintése</li>
+                                <li>Java EE és EJB szabvány</li>
+                                <li>CDI, Weld implementáció, dependency injection</li>
+                                <li>Unit és integrációs tesztelés</li>
+                                <li>Háromrétegű alkalmazás, servlet és JSP felülettel</li>
+                                <li>Űrlap kezelése</li>
+                                <li>Java EE alkalmazás integrációs tesztelése Arquillian és Selenium
+                                    WebDriver eszközökkel</li>
+                                <li>Adatbázis-hozzáférés JDBC-vel</li>
+                                <li><code>DataSource</code> és konfigurálása</li>
+                                <li>DAO tervezési minta</li>
+                                <li>Séma inicializálás Flyway eszközzel</li>
+                                <li>JPA használata Java EE-ben</li>
+                                <li>Programozott és deklaratív tranzakciókezelés</li>
+                                <li>EJB komponensek, Session Bean (Stateless Session Bean, Stateful
+                                    Session Bean, Singleton)</li>
+                                <li>Java EE kliens, Application Client Container (ACC).</li>
+                                <li>Lokális és távoli interfészek</li>
+                                <li>Aspect Oriented Programming, Callback metódusok</li>
+                                <li>Időzítők, Timer Service</li>
+                                <li>Bevezetés a JSF szabvány használatába</li>
+                                <li>Bean Validation, beépített és saját validációk, I18N, validation
+                                    group</li>
+                                <li>Naplózás</li>
+                                <li>SOAP webszolgáltatások implementálása JAX-WS segítségével</li>
+                                <li>RESTful webszolgáltatások implementálása JAX-RS segítségével</li>
+                                <li>JMS, üzenetküldés és fogadás, Message Driven Bean</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
             <h1>Biztonság</h1>
 
             <div class="trainings">
@@ -3186,8 +3274,9 @@
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <h1 id="keycloak-fejlesztés-és-adminisztráció-javax-kcl-1-nap">Keycloak
-                                fejlesztés és adminisztráció (JAVAX-KCL) (1 nap)</h1>
+                                fejlesztés és adminisztráció (JAVAX-KCL) (1 nap)</h1>                                
                             <p>Identity and Access Management</p>
+                            <p><a href="https://www.training360.com/kepzes/javax-kcl">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés során részletesen bemutatásra kerül az OAuth 2.0 és OpenID
                                 Connect szabvány, és ezeket a szabványokat is megvalósító Keycloak
@@ -3267,6 +3356,7 @@
                             <span class="close">&times;</span>
                             <h1 id="architect-képzéssorozat-arch-01-13-nap">Architect képzéssorozat
                                 (ARCH-01) (13 nap)</h1>
+                            <p><a href="https://www.training360.com/kepzes/arch-01">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <ul>
                                 <li>Java System Architect szeretnél lenni?</li>
@@ -3457,6 +3547,7 @@
                                 platform (Java SE/Java EE) általános bemutatása - workshop vezetőknek
                                 (JAVA-PL1) (2 nap)</h1>
                             <p>Java projekt során használt módszertanok, szabványok és eszközök</p>
+                            <p><a href="https://www.training360.com/kepzes/java-pl1">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja megismertetni a vezetőket, döntéshozókat, a Java
                                 terület iránt érdeklődőket a Java technológia kialakulásával,
@@ -3529,6 +3620,7 @@
                                 nap)</h1>
                             <p>Java alkalmazás üzemeltetéséhez szükséges ismeretek, szabványok, JVM,
                                 futtatókönyezetek, alkalmazásszerverek</p>
+                                <p><a href="https://www.training360.com/kepzes/java-pl2">A képzés oldala</a></p>
                             <h2 id="ismertető">Ismertető</h2>
                             <p>A képzés célja megismertetni az üzemeltetőket, alkalmazásgazdákat a
                                 Java technológia alapján működő szoftverek, alkalmazások üzemeltetésével
