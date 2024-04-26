@@ -247,8 +247,13 @@
 }
 
 .modal-content a {
+    color: #888;    
+}
+
+.blended .modal-content a {
     color: #888;
 }
+
 
 .modal-content h1 {
     line-height: 40px;
