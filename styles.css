@@ -1,16 +1,46 @@
+.container {
+    max-width: 966px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.search {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #4f5362;
+    padding: 15px;
+}
+
+.search-container {
+    max-width: 100%;
+}
+
+.search input {
+    font-size: 40px;
+    color: #4f5362;
+    padding: 5px;
+
+    max-width: 100%;
+}
+
 .category {
     border: #E73B2B dotted 1px ;
     margin: 20px;
     padding: 10px;
+    min-width: 216px;
 }
 
 .category > h1 {
     color: #E73B2B;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
     padding-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .trainings {
@@ -60,11 +90,11 @@
     font-weight: normal;
 }
 
-.training .footer {
+.training .footer {    
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200;
+  width: 200px;
   height: 30px;
   background-color: #D5F0CF;
   padding: 5px;
@@ -73,7 +103,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .day {
@@ -88,10 +117,21 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-bottom: 60px solid #2FB410;
     border-left: 60px solid transparent;    
+    z-index: 900;
+}
+
+.triangle-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid #2FB410;
+    border-right: 60px solid transparent;    
     z-index: 900;
 }
 
@@ -99,22 +139,33 @@
     border-bottom: 60px solid #E73B2B;
 }
 
+.blended .triangle-left {
+    border-bottom: 60px solid #E73B2B;
+}
+
+
 .blended .footer {
     background-color: #FAD8D5;
 }
 
-.footer-layer {
-    position: absolute;
-    color: white;
-    bottom: 0;
-    right: 3px; 
-    z-index: 930;
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
     height: 30px;
-    
+    width: 100%;    
 }
 
-.footer-layer .material-symbols-outlined {
-    font-size: 25px;
+.footer .left-icon {    
+    color: gold;
+    width: 20px;
+    z-index: 930;
+}
+
+.footer .right-icon {
+    color: white;
+    z-index: 930;
 }
 
 .modal {
@@ -141,6 +192,11 @@
     line-height: 22px;
 }
 
+.modal-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -160,17 +216,4 @@ code {
     font-size: 15px;
     background-color: gainsboro;
     padding: 2px;
-}
-
-.search {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    color: #4f5362;
-}
-
-.search input {
-    font-size: 40px;
-    color: #4f5362;
-    padding: 5px;
 }
