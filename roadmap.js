@@ -18,7 +18,7 @@ window.onload = function() {
         const query = search.value;        
         selectTrainings(function(training) {
             const content = training.querySelector(".modal-content");
-            return (query == "") || (content.innerHTML.includes(query));
+            return (query == "") || (content.innerHTML.toLowercase().includes(query.toLowercase()));
         });
     };
 
