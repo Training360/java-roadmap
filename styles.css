@@ -7,7 +7,6 @@
 .header {
     display: flex;
     padding: 20px;
-    width: 100%;
     background-color: #E73B2B;
     color: white;
     text-transform: uppercase;   
@@ -17,11 +16,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .header #roadmap {
     font-size: 50px;    
-    width: 100%;
+    margin-right: auto;
 }
 
 
@@ -83,7 +83,7 @@
 .category {
     border: #E73B2B dotted 1px ;
     padding: 10px;
-    min-width: 216px;
+    min-width: 216px;    
 }
 
 .category > h1 {
@@ -99,6 +99,7 @@
 .trainings {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .training {
