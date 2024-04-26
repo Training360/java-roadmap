@@ -192,9 +192,13 @@
     line-height: 22px;
 }
 
+.modal-content h1 {
+    line-height: 40px;
+}
+
 .modal-content h2 {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 /* The Close Button */
