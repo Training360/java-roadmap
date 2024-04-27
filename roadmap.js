@@ -10,15 +10,17 @@ window.onload = function() {
             const close = training.querySelector(".close");
             close.onclick = function() {
                 modal.style.display = "none";
-                    }
+            };
     });
 
     const search = document.querySelector("#search-input");
     search.oninput = function() {
+        clearFilters();
+        document.querySelector("#filter-none").classList.add("selected");
         const query = search.value;        
         selectTrainings(function(training) {
             const content = training.querySelector(".modal-content");
-            return (query == "") || (content.innerHTML.toLowercase().includes(query.toLowercase()));
+            return (query == "") || (content.innerHTML.toLowerCase().includes(query.toLowerCase()));
         });
     };
 
@@ -28,9 +30,7 @@ window.onload = function() {
             if (!filter.classList.contains("selected")) {                
                 const search = document.querySelector("#search-input");
                 search.value = "";
-                filters.forEach(function(otherFilter, key, parent) {
-                    otherFilter.classList.remove("selected");
-                });
+                clearFilters();
                 filter.classList.add("selected");
                 const filterId = filter.id;
                 if (filterId == "filter-none") {
@@ -82,6 +82,13 @@ window.onload = function() {
         }
     });
         
+}
+
+function clearFilters() {
+    const filters = document.querySelectorAll(".filter");
+    filters.forEach(function(otherFilter, key, parent) {
+        otherFilter.classList.remove("selected");
+    });
 }
 
 function selectTrainings(testTraining) {
